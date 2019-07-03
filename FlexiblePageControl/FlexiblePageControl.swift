@@ -384,7 +384,7 @@ private class ItemView: UIView {
         dotView.frame.size = CGSize(width: dotSize, height: dotSize)
         dotView.center = CGPoint(x: itemSize/2, y: itemSize/2)
         dotView.backgroundColor = dotColor
-        dotView.layer.cornerRadius = dotSize/2
+//        dotView.layer.cornerRadius = dotSize/2
         dotView.layer.masksToBounds = true
         
         addSubview(dotView)
@@ -427,7 +427,7 @@ private class ItemView: UIView {
 
 
         UIView.animate(withDuration: animateDuration, animations: { [unowned self] in
-            self.dotView.layer.cornerRadius = _size.height / 2.0
+//            self.dotView.layer.cornerRadius = _size.height / 2.0
             self.dotView.layer.bounds.size = _size
         })
     }
